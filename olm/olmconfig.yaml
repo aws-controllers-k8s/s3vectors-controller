@@ -1,26 +1,24 @@
-# This configuration is a placeholder. Replace any values with relevant values for your
-# service controller project.
 ---
 annotations:
   capabilityLevel: Basic Install
-  shortDescription: AWS S3Vectors controller is a service controller for managing S3Vectors resources
-    in Kubernetes
-displayName: AWS Controllers for Kubernetes - Amazon S3Vectors
+  shortDescription: AWS S3 Vectors controller is a service controller for managing S3
+    Vectors resources in Kubernetes
+displayName: AWS Controllers for Kubernetes - Amazon S3 Vectors
 description: |-
-  Manage Amazon S3Vectors resources in AWS from within your Kubernetes cluster.
+  Manage Amazon S3 Vectors resources in AWS from within your Kubernetes cluster.
 
 
-  **About Amazon S3Vectors**
+  **About Amazon S3 Vectors**
 
 
-  {ADD YOUR DESCRIPTION HERE}
+  Amazon S3 Vectors is the first cloud object store with native support to store large vector datasets and provide subsecond query performance, reducing the cost of uploading, storing, and querying vectors. S3 Vectors introduces vector buckets, a new bucket type purpose-built to store and query vectors through a dedicated set of APIs. Within a vector bucket, you organize vector data in vector indexes, and you can store up to tens of millions of vectors per index. S3 Vectors integrates with Amazon Bedrock Knowledge Bases, Amazon SageMaker Unified Studio, and Amazon OpenSearch Service for building cost-effective AI applications.
 
 
   **About the AWS Controllers for Kubernetes**
 
 
   This controller is a component of the [AWS Controller for Kubernetes](https://github.com/aws/aws-controllers-k8s)
-  project. This project is currently in **developer preview**.
+  project.
 
 
   **Pre-Installation Steps**
@@ -28,13 +26,13 @@ description: |-
 
   Please follow the following link: [Red Hat OpenShift](https://aws-controllers-k8s.github.io/community/docs/user-docs/openshift/)
 samples:
-- kind: ExampleCustomKind
+- kind: VectorBucket
   spec: '{}'
-- kind: SecondExampleCustomKind
+- kind: Index
   spec: '{}'
 maintainers:
 - name: "s3vectors maintainer team"
   email: "ack-maintainers@amazon.com"
 links:
-- name: Amazon S3Vectors Developer Resources
-  url: https://aws.amazon.com/S3Vectors/developer-resources/
+- name: Amazon S3 Vectors Developer Resources
+  url: https://aws.amazon.com/s3/features/vectors/
